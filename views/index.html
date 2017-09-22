@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="ziwei">
+    <link rel="icon" href="">
+    <title>Gamepoch 星游纪</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/hopscotch/0.3.1/css/hopscotch.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+            <div class="fixed-top">
+        <img src="img/headImg.png" alt="活动头图" style="width:100%">
+    </div>
+        <div class="stopwatch_wrapper" style="text-align: center">
+            <div class="stopwatch">
+                <span class="second"></span>
+                <span class="millisecond"></span>
+            </div>
+            <ul class="results"></ul>
+        </div>
+        <div class="row" style="margin-top: 10%">
+           <div class="col-12" style="text-align: center">
+               <h3 id="resultLabel" style="font-size: 0.8em; color:red">按住篮球开始计时，在1s时出手即可投篮命中</h3> 
+           </div>   
+        </div>
+        <div class="row" style="margin: 10px auto">    
+           <div class="col-12" style="text-align: center">
+               <p>剩余次数：<strong id="leftTimesLabel" style="font-size: 1.5em; color:red">3</strong>次</p>
+           </div>   
+        </div>
+        <div class="row" style="text-align: center">
+         <img id="basketballImg" src="img/basket.png" alt="篮球" style="width: 100px;border-radius: 20px; overflow:hidden;">
+<!--                    <img id="basketballImg" src="img/basket.png" alt="篮球" onTouchStart="stopwatch.start();" onMouseUp="stopwatch.stop();" onTouchEnd="stopwatch.stop();" onMouseDown="stopwatch.start();" style="width: 100px;border-radius: 20px; overflow:hidden;">-->
+
+        </div> 
+        <div id="block" style="position: absolute;width: 100px;height:100px;z-index: 100000">
+            
+        </div> 
+    </div>
+    <div class="foot" style="margin: 0 auto;width:100%">
+        <div class="row" style="">
+          <div class="col-xs-4">
+               <button id="fameBtn" class="btn btn-light"><span style="font-size: 0.5em">名人堂</span></button>   
+          </div>
+          <div class="col-xs-4">
+               <button id="ruleBtn" class="btn btn-light"><span style="font-size: 0.5em">规则说明</span></button>   
+          </div>
+          <div class="col-xs-4">
+           <button href="#" class="btn btn-light"><span style="font-size: 0.5em">预购游戏</span></button>    
+          </div>
+        </div>  
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/hopscotch/0.3.1/js/hopscotch.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/hopscotch-tour.js" defer></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

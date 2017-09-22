@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "digital bold";
+  src: url('/font/DS-DIGIB.ttf');
+}
+
+body {
+    background-color: #f3f5f6;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.foot {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.btn {
+    background-color: white;
+    box-shadow:  0 0 0.2em grey;
+    margin: 0 5px 0 5px;
+    width: 100%;
+}
+
+.img-block {
+    margin: 0 auto;
+}
+
+.stopwatch {
+  margin: 10% auto;
+  font-family: "digital bold", sans-serif;
+  font-size: 15vw;
+    width: 70%;
+    background-color: #f6f6f6;
+    border-radius: 0.4em;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+    box-shadow: 0 0 0.3em grey inset, 0 0 0.3em grey;
+}
+
+
+.second {
+    font-size: 30vw;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.millisecond {
+    font-size: 10vw;
+    line-height: 10vh;
+    vertical-align: bottom;
+}
+
+
+#rule-wrapper {
+    color: white;
+    z-index: 1200;
+    position: absolute;
+    top: 0px;
+    opacity: 1;
+    height: 100vh;
+}
+
+#rule-wrapper .row {
+    margin: 20px 20px;
+}
+
+#rule-wrapper h3 {
+    font-size: 2rem;
+}
+
+#rule-wrapper p{
+    font-size: 1.2rem;
+}
+
+
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 5;
+}
+
+.overlay-relative{
+  position: relative;
+  z-index: 7;
+}
+
+.helper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background: #FFF;
+  border-radius: 4px;
+  z-index: 6;
+    width:0px;
+    height:0px;
+}
